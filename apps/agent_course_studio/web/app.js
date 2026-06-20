@@ -94,6 +94,24 @@ const FLOW_LIBRARY = {
   },
 };
 
+const PHASES = [
+  { label: "Foundation", range: "L01-L03", accent: "coral", text: "认知、Prompt、工具调用" },
+  { label: "Framework", range: "L04-L06", accent: "teal", text: "LangChain、RAG、LCEL" },
+  { label: "Systems", range: "L07-L09", accent: "blue", text: "Memory、模式、MCP" },
+  { label: "Production", range: "L10-L12", accent: "amber", text: "Skill、评测部署、项目" },
+];
+
+const COVERAGE = [
+  ["Prompt", 92],
+  ["Tools", 94],
+  ["RAG", 91],
+  ["Memory", 86],
+  ["MCP", 84],
+  ["Skill", 95],
+  ["Eval", 88],
+  ["Deploy", 86],
+];
+
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
@@ -141,6 +159,24 @@ function renderShell() {
   ]
     .map(([label, value]) => `<div class="stat"><strong>${value}</strong><span>${label}</span></div>`)
     .join("");
+  document.querySelector("#phaseStrip").innerHTML = PHASES.map(
+    (phase) => `
+      <div class="phase-card ${phase.accent}">
+        <span>${escapeHtml(phase.range)}</span>
+        <strong>${escapeHtml(phase.label)}</strong>
+        <small>${escapeHtml(phase.text)}</small>
+      </div>
+    `
+  ).join("");
+  document.querySelector("#coverageBars").innerHTML = COVERAGE.map(
+    ([label, value]) => `
+      <div class="coverage-row">
+        <span>${escapeHtml(label)}</span>
+        <div class="coverage-track"><i style="width:${value}%"></i></div>
+        <em>${value}</em>
+      </div>
+    `
+  ).join("");
   renderNav();
   renderLesson();
   renderSearch("");

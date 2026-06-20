@@ -1,6 +1,6 @@
 window.AGENT_COURSE_DATA = {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-20T06:42:17.284204+00:00",
+  "generatedAt": "2026-06-20T07:06:55.460854+00:00",
   "course": {
     "name": "Agent Course Studio",
     "subtitle": "面向 Agent 开发学习的课程实验室",
@@ -1679,7 +1679,14 @@ window.AGENT_COURSE_DATA = {
         "理解渐进披露：启动时只加载 metadata，触发后再加载完整指令和工具。",
         "能从边界、契约、执行、观测、安全和评测六个角度评价一个 Skill。"
       ],
-      "deliverables": [],
+      "deliverables": [
+        "能用一张图或一段话解释 Tool、Skill、MCP 三层分工。",
+        "完成一个包含 `SKILL.md`、触发条件、工具清单、执行步骤和输出约束的自定义 Skill。",
+        "跑通天气查询、代码审查和办公助手三个 Skill 示例，并能说明每个示例的工程边界。",
+        "给一个高风险 Skill 写出授权策略、确认策略、审计字段和误触发处置流程。",
+        "给一个 Skill 发布变更写出灰度、指标、回滚和复盘方案。",
+        "完成本章小测、拓展作业和面试题复盘。"
+      ],
       "docs": [
         {
           "key": "readme",

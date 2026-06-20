@@ -6,6 +6,7 @@
 
 - 12 章课程路径导航。
 - 章节概览、讲义、实战、面试题、资源统一展示。
+- 每章 Agent 开发图谱，用于课堂讲解和复盘。
 - 本地搜索，支持按关键词定位章节。
 - 本地检索式课程助手，返回带引用的学习建议。
 - 浏览器本地学习进度记录。
@@ -39,7 +40,11 @@ python3 apps/agent_course_studio/build_course_data.py
 
 ```text
 apps/agent_course_studio/web/data/course.json
+apps/agent_course_studio/web/data/course_boot.js
+apps/agent_course_studio/web/data/docs/
 ```
+
+其中 `course.json` 是轻量索引，`course_boot.js` 用于首屏同步渲染，`docs/` 保存按需加载的 Markdown 文档。
 
 ## 实验运行安全边界
 

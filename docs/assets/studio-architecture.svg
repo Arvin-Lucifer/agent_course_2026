@@ -1,0 +1,45 @@
+<svg width="1180" height="500" viewBox="0 0 1180 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Course Studio Architecture</title>
+  <desc id="desc">Content source, build pipeline, static web studio and optional local runner.</desc>
+  <rect width="1180" height="500" rx="24" fill="#101820"/>
+  <text x="42" y="56" fill="#FFFDF8" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800">Agent Course Studio Architecture</text>
+  <text x="42" y="86" fill="#A7B0B8" font-family="Inter,Arial,sans-serif" font-size="15">Content-source driven, local-first, runner-safe.</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7DD3C7"/>
+    </marker>
+  </defs>
+  <g font-family="Inter,Arial,sans-serif">
+    <rect x="58" y="140" width="250" height="220" rx="18" fill="#FFFDF8"/>
+    <text x="88" y="182" fill="#101820" font-size="22" font-weight="800">Course Source</text>
+    <text x="88" y="220" fill="#4B5563" font-size="15">lessons/L01-L12</text>
+    <text x="88" y="250" fill="#4B5563" font-size="15">teaching_support/</text>
+    <text x="88" y="280" fill="#4B5563" font-size="15">practice scripts</text>
+    <text x="88" y="310" fill="#4B5563" font-size="15">materials / resources</text>
+    <rect x="365" y="140" width="250" height="220" rx="18" fill="#E8F7F3"/>
+    <text x="395" y="182" fill="#0F766E" font-size="22" font-weight="800">Build Pipeline</text>
+    <text x="395" y="220" fill="#315D5A" font-size="15">build_course_data.py</text>
+    <text x="395" y="250" fill="#315D5A" font-size="15">content sanitization</text>
+    <text x="395" y="280" fill="#315D5A" font-size="15">course manifest</text>
+    <text x="395" y="310" fill="#315D5A" font-size="15">on-demand markdown docs</text>
+    <rect x="672" y="140" width="250" height="220" rx="18" fill="#FFF7EA"/>
+    <text x="702" y="182" fill="#B7791F" font-size="22" font-weight="800">Web Studio</text>
+    <text x="702" y="220" fill="#6B4E16" font-size="15">course map</text>
+    <text x="702" y="250" fill="#6B4E16" font-size="15">search and assistant</text>
+    <text x="702" y="280" fill="#6B4E16" font-size="15">lesson graph view</text>
+    <text x="702" y="310" fill="#6B4E16" font-size="15">responsive UI</text>
+    <rect x="965" y="140" width="155" height="220" rx="18" fill="#ECF2FF"/>
+    <text x="992" y="182" fill="#2556A3" font-size="22" font-weight="800">Runner</text>
+    <text x="992" y="220" fill="#334B74" font-size="15">off by default</text>
+    <text x="992" y="250" fill="#334B74" font-size="15">whitelist only</text>
+    <text x="992" y="280" fill="#334B74" font-size="15">timeout control</text>
+    <text x="992" y="310" fill="#334B74" font-size="15">no .env read</text>
+    <path d="M318 250H352" stroke="#7DD3C7" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M625 250H659" stroke="#7DD3C7" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M932 250H954" stroke="#7DD3C7" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="14">
+    <rect x="58" y="398" width="1062" height="56" rx="12" fill="#17242D" stroke="#30424D"/>
+    <text x="86" y="432" fill="#E5EBEE">Safety invariant: generated web data excludes .env, local proxy files, generated indexes, personal paths, and high-entropy secret patterns.</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="1180" height="460" viewBox="0 0 1180 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Development Capability Matrix</title>
+  <desc id="desc">Capability coverage across model control, tools, knowledge, state, protocols, skills, evaluation and project delivery.</desc>
+  <rect width="1180" height="460" rx="24" fill="#FFFDF8"/>
+  <text x="42" y="56" fill="#17202A" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800">Capability Coverage</text>
+  <text x="42" y="86" fill="#667085" font-family="Inter,Arial,sans-serif" font-size="15">The course is organized around the major engineering capabilities needed to build production-minded Agents.</text>
+  <g font-family="Inter,Arial,sans-serif" font-size="15">
+    <g transform="translate(72 130)">
+      <rect width="210" height="250" rx="18" fill="#E8F7F3" stroke="#A7DCD4"/>
+      <text x="24" y="40" fill="#0F766E" font-size="20" font-weight="800">Model Control</text>
+      <text x="24" y="78" fill="#315D5A">Prompt</text>
+      <text x="24" y="108" fill="#315D5A">Structured output</text>
+      <text x="24" y="138" fill="#315D5A">Reasoning patterns</text>
+      <rect x="24" y="180" width="162" height="14" rx="7" fill="#CFEDE8"/>
+      <rect x="24" y="180" width="144" height="14" rx="7" fill="#0F766E"/>
+    </g>
+    <g transform="translate(318 130)">
+      <rect width="210" height="250" rx="18" fill="#FFF7EA" stroke="#F0D7AA"/>
+      <text x="24" y="40" fill="#B7791F" font-size="20" font-weight="800">Execution</text>
+      <text x="24" y="78" fill="#6B4E16">Function Calling</text>
+      <text x="24" y="108" fill="#6B4E16">LangChain</text>
+      <text x="24" y="138" fill="#6B4E16">Tool recovery</text>
+      <rect x="24" y="180" width="162" height="14" rx="7" fill="#F7E4BE"/>
+      <rect x="24" y="180" width="152" height="14" rx="7" fill="#B7791F"/>
+    </g>
+    <g transform="translate(564 130)">
+      <rect width="210" height="250" rx="18" fill="#ECF2FF" stroke="#C6D8FF"/>
+      <text x="24" y="40" fill="#2556A3" font-size="20" font-weight="800">Knowledge & State</text>
+      <text x="24" y="78" fill="#334B74">RAG</text>
+      <text x="24" y="108" fill="#334B74">Memory</text>
+      <text x="24" y="138" fill="#334B74">Multi-index routing</text>
+      <rect x="24" y="180" width="162" height="14" rx="7" fill="#CFDBF4"/>
+      <rect x="24" y="180" width="150" height="14" rx="7" fill="#2556A3"/>
+    </g>
+    <g transform="translate(810 130)">
+      <rect width="210" height="250" rx="18" fill="#F7EFEA" stroke="#E9C9B9"/>
+      <text x="24" y="40" fill="#C2410C" font-size="20" font-weight="800">Production</text>
+      <text x="24" y="78" fill="#6F3017">MCP</text>
+      <text x="24" y="108" fill="#6F3017">Skill</text>
+      <text x="24" y="138" fill="#6F3017">Eval / Deploy</text>
+      <rect x="24" y="180" width="162" height="14" rx="7" fill="#F1D2C3"/>
+      <rect x="24" y="180" width="156" height="14" rx="7" fill="#C2410C"/>
+    </g>
+  </g>
+</svg>

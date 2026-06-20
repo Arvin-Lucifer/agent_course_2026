@@ -1,0 +1,105 @@
+<svg width="1180" height="520" viewBox="0 0 1180 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Course Roadmap</title>
+  <desc id="desc">A 12 lesson roadmap from Agent basics to graduation project.</desc>
+  <rect width="1180" height="520" rx="24" fill="#F7F5EF"/>
+  <path d="M0 78H1180" stroke="#E1DED4"/>
+  <text x="42" y="50" fill="#17202A" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800">Agent Course Roadmap</text>
+  <text x="930" y="48" fill="#667085" font-family="Inter,Arial,sans-serif" font-size="15">12 lessons · 4 learning stages</text>
+  <g stroke="#D9D6CC">
+    <path d="M80 174H1100"/>
+    <path d="M80 294H1100"/>
+    <path d="M80 414H1100"/>
+  </g>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="42" y="119" fill="#C2410C" font-size="16" font-weight="800">01 Foundation</text>
+    <text x="340" y="119" fill="#0F766E" font-size="16" font-weight="800">02 Framework & Knowledge</text>
+    <text x="704" y="119" fill="#2556A3" font-size="16" font-weight="800">03 Systems & Protocols</text>
+    <text x="970" y="119" fill="#B7791F" font-size="16" font-weight="800">04 Production</text>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="14">
+    <g transform="translate(42 146)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#17202A"/>
+      <text x="21" y="44" fill="#FFFFFF" font-weight="800">01</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Agent Basics</text>
+      <text x="62" y="55" fill="#667085">ChatBot → Agent</text>
+    </g>
+    <g transform="translate(292 146)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#C2410C"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">02</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Prompt</text>
+      <text x="62" y="55" fill="#667085">System / Few-shot / CoT</text>
+    </g>
+    <g transform="translate(542 146)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#0F766E"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">03</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Function Calling</text>
+      <text x="62" y="55" fill="#667085">Tools and execution loop</text>
+    </g>
+    <g transform="translate(792 146)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#2556A3"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">04</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">LangChain</text>
+      <text x="62" y="55" fill="#667085">Framework quickstart</text>
+    </g>
+    <g transform="translate(167 266)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#0F766E"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">05</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">RAG</text>
+      <text x="62" y="55" fill="#667085">Retrieval and citations</text>
+    </g>
+    <g transform="translate(417 266)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#0F766E"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">06</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">LangChain Advanced</text>
+      <text x="62" y="55" fill="#667085">LCEL / Parser / Retriever</text>
+    </g>
+    <g transform="translate(667 266)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#2556A3"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">07</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Memory</text>
+      <text x="62" y="55" fill="#667085">Context and long-term state</text>
+    </g>
+    <g transform="translate(917 266)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#2556A3"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">08</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Agent Modes</text>
+      <text x="62" y="55" fill="#667085">RAG / ReAct / Multi-Agent</text>
+    </g>
+    <g transform="translate(292 386)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#2556A3"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">09</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">MCP</text>
+      <text x="62" y="55" fill="#667085">Protocol and tool ecosystem</text>
+    </g>
+    <g transform="translate(542 386)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#B7791F"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">10</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Skill</text>
+      <text x="62" y="55" fill="#667085">Reusable capability packages</text>
+    </g>
+    <g transform="translate(792 386)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#B7791F"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">11</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Eval & Deploy</text>
+      <text x="62" y="55" fill="#667085">Quality gates and services</text>
+    </g>
+    <g transform="translate(42 386)">
+      <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
+      <circle cx="29" cy="39" r="18" fill="#B7791F"/>
+      <text x="20" y="44" fill="#FFFFFF" font-weight="800">12</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Graduation Project</text>
+      <text x="62" y="55" fill="#667085">Customer support Agent</text>
+    </g>
+  </g>
+</svg>

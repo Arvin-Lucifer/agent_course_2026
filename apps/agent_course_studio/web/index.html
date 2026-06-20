@@ -28,15 +28,23 @@
       </aside>
 
       <main class="main">
-        <section class="hero-panel">
-          <div class="hero-copy">
-            <p class="eyebrow">从 ChatBot 到可部署 Agent</p>
+        <section class="studio-header">
+          <div class="studio-copy">
+            <p class="eyebrow">Agent Development Learning Lab</p>
             <h1 id="courseTitle">Agent Course Studio</h1>
-            <p id="courseDescription" class="hero-description">
-              正在加载课程内容...
-            </p>
+            <p id="courseDescription" class="studio-description">正在加载课程内容...</p>
           </div>
-          <div id="courseStats" class="stats-grid" aria-label="课程统计"></div>
+          <div class="studio-dashboard">
+            <div id="courseStats" class="stats-grid" aria-label="课程统计"></div>
+            <div class="coverage-panel">
+              <div class="panel-title-row">
+                <h2>能力覆盖</h2>
+                <span class="status-pill">Studio</span>
+              </div>
+              <div id="coverageBars" class="coverage-bars"></div>
+            </div>
+          </div>
+          <div id="phaseStrip" class="phase-strip" aria-label="课程阶段"></div>
         </section>
 
         <section class="workspace">

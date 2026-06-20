@@ -94,6 +94,7 @@
 
 - 不引入大型前端依赖，降低安装和部署成本。
 - 直接从现有课程目录生成 `course.json`。
+- 生成轻量 manifest、同步 boot 数据和按需加载 Markdown 文档，保证首屏速度和静态部署稳定性。
 - 前端使用原生 HTML/CSS/JS，便于 GitHub Pages 或任意静态服务器托管。
 - 本地服务使用标准库 `http.server`，额外提供受控运行 API。
 
@@ -120,12 +121,15 @@ apps/
       styles.css
       app.js
       data/course.json
+      data/course_boot.js
+      data/docs/
 ```
 
 说明：
 
 - `lessons/` 继续作为唯一课程内容源。
-- `apps/agent_course_studio/web/data/course.json` 是生成物，可以随课程更新重新生成。
+- `apps/agent_course_studio/web/data/` 是生成物，可以随课程更新重新生成。
+- `course.json` 提供索引，`course_boot.js` 提供首屏同步数据，`docs/` 提供按需加载的 Markdown 文档。
 - 前端不修改课程原始 Markdown，只负责展示和检索。
 
 ## 六、页面信息架构
@@ -136,6 +140,7 @@ apps/
 - 课程关键指标：12 章、实践脚本、面试资料、毕业项目。
 - 课程路径时间线。
 - 主题雷达：Prompt、Tool、RAG、Memory、MCP、Skill、Eval、Deploy。
+- README 图表：课程路线图、Studio 架构图、能力覆盖图。
 
 ### 2. 章节页
 
@@ -147,6 +152,7 @@ apps/
 - 文件地图
 - 讲义 / 总结
 - 实操脚本
+- Agent 开发图谱
 - 面试题
 - 拓展作业
 - 资源专题
@@ -181,6 +187,7 @@ apps/
 - 能打开课程实验室首页。
 - 能展示 L01-L12 全部章节。
 - 每章能看到讲义、实战、面试、资源等核心信息。
+- 每章能看到本章 Agent 开发图谱。
 - 能搜索课程内容。
 - 课程助手能返回带引用的本地检索结果。
 - 学习进度能保存在浏览器本地。
@@ -189,6 +196,7 @@ apps/
 ### 工程验收
 
 - `build_course_data.py` 能重新生成课程索引。
+- `build_course_data.py` 能重新生成 `course.json`、`course_boot.js` 和 `data/docs/`。
 - `server.py` 能启动本地服务。
 - 生成数据不包含 `.env`、真实 API key、个人绝对路径。
 - HTML/CSS/JS 没有明显布局错误。
@@ -206,6 +214,7 @@ apps/
 2. 新建 `apps/agent_course_studio`。
 3. 编写课程数据构建脚本。
 4. 生成 `course.json`。
+4.1 生成首屏 boot 数据和按需 Markdown 文档。
 5. 编写静态前端页面。
 6. 编写轻量本地服务。
 7. 更新 README。
