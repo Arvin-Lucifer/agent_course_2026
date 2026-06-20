@@ -12,8 +12,8 @@
   </g>
   <g font-family="Inter,Arial,sans-serif">
     <text x="42" y="119" fill="#C2410C" font-size="16" font-weight="800">01 Foundation</text>
-    <text x="340" y="119" fill="#0F766E" font-size="16" font-weight="800">02 Framework & Knowledge</text>
-    <text x="704" y="119" fill="#2556A3" font-size="16" font-weight="800">03 Systems & Protocols</text>
+    <text x="340" y="119" fill="#0F766E" font-size="16" font-weight="800">02 Framework &amp; Knowledge</text>
+    <text x="704" y="119" fill="#2556A3" font-size="16" font-weight="800">03 Systems &amp; Protocols</text>
     <text x="970" y="119" fill="#B7791F" font-size="16" font-weight="800">04 Production</text>
   </g>
   <g font-family="Inter,Arial,sans-serif" font-size="14">
@@ -91,7 +91,7 @@
       <rect width="230" height="78" rx="12" fill="#FFFFFF" stroke="#D8D4CA"/>
       <circle cx="29" cy="39" r="18" fill="#B7791F"/>
       <text x="20" y="44" fill="#FFFFFF" font-weight="800">11</text>
-      <text x="62" y="33" fill="#17202A" font-weight="800">Eval & Deploy</text>
+      <text x="62" y="33" fill="#17202A" font-weight="800">Eval &amp; Deploy</text>
       <text x="62" y="55" fill="#667085">Quality gates and services</text>
     </g>
     <g transform="translate(42 386)">
