@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>智能客服 Agent 展示 | AI Agent Studio</title>
+    <meta
+      name="description"
+      content="AI Agent Studio 毕业项目展示：基于 LangGraph、RAG、FastAPI、评测脚本和前端客服台的智能客服 Agent。"
+    />
+    <link rel="canonical" href="https://arvin-lucifer.github.io/agent_course_2026/showcase/" />
+    <meta property="og:title" content="智能客服 Agent 展示" />
+    <meta property="og:description" content="一个可运行、可评测、可答辩的 AI Agent 毕业项目。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arvin-lucifer.github.io/agent_course_2026/showcase/" />
+    <meta property="og:image" content="https://arvin-lucifer.github.io/agent_course_2026/docs/assets/showcase-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../docs/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../site.css" />
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="brand" href="../" aria-label="AI Agent Studio home">
+        <span>AI</span>
+        <strong>AI Agent Studio</strong>
+      </a>
+      <nav aria-label="Primary">
+        <a href="../">首页</a>
+        <a href="../studio/">进入工作台</a>
+        <a href="https://github.com/Arvin-Lucifer/agent_course_2026/tree/main/lessons/L12_graduation_project">GitHub 项目目录</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="showcase-hero">
+        <div>
+          <p class="eyebrow">Graduation Showcase</p>
+          <h1>智能客服 Agent：从课程能力到工程交付</h1>
+          <p>
+            L12 把前 11 章的 Prompt、工具调用、RAG、Memory、Agent 模式、Skill、评测部署收束到一个端到端项目。
+            它可以本地运行、自动测试、生成评测报告，也可以作为面试和答辩作品展示。
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="../studio/#L12_graduation_project/overview">在 Studio 中学习 L12</a>
+            <a class="secondary dark" href="https://github.com/Arvin-Lucifer/agent_course_2026/tree/main/lessons/L12_graduation_project/reference_implementation/intelligent_customer_agent">查看参考实现</a>
+          </div>
+        </div>
+        <div class="showcase-visual">
+          <img src="../docs/assets/studio-preview.png" alt="AI Agent Studio L12 project screen" />
+          <div class="showcase-terminal" aria-label="Project quick commands">
+            <span>$ cd lessons/L12_graduation_project</span>
+            <span>$ bash practice/preclass_run.sh</span>
+            <span>$ python scripts/build_kb.py</span>
+            <span>$ bash scripts/run_api.sh</span>
+            <strong>http://127.0.0.1:8011/web/dashboard.html</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-matrix">
+        <article>
+          <span>01</span>
+          <h2>Agent Graph</h2>
+          <p>用 LangGraph 把意图识别、检索、澄清、投诉工单、人工兜底和最终回答组织成状态机。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Grounded RAG</h2>
+          <p>知识库问答带引用来源，无法找到证据时显式兜底，避免把不确定内容讲成事实。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Ops Console</h2>
+          <p>前端客服台和运营 Dashboard 展示会话、工单、知识缺口和评测结果。</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h2>Quality Gate</h2>
+          <p>通过测试、评测集、日志和 bad case 回流，让项目不是只能演示一次。</p>
+        </article>
+      </section>
+
+      <section class="showcase-flow">
+        <div>
+          <p class="eyebrow">Runtime Story</p>
+          <h2>一条用户问题如何走完整链路</h2>
+          <p>项目展示时，可以按这条链路讲：用户提出问题，系统判断意图，检索知识库，必要时澄清，遇到投诉或无法解决时生成工单或转人工，最后用评测和日志证明质量。</p>
+        </div>
+        <ol>
+          <li><strong>Intake</strong><span>接收用户问题，保留会话上下文。</span></li>
+          <li><strong>Route</strong><span>判断 FAQ、投诉、复杂问题或转人工。</span></li>
+          <li><strong>Retrieve</strong><span>从知识库召回证据，并保留引用。</span></li>
+          <li><strong>Act</strong><span>创建工单、记录缺口或请求澄清。</span></li>
+          <li><strong>Evaluate</strong><span>用测试和评测报告回归质量。</span></li>
+        </ol>
+      </section>
+
+      <section class="showcase-proof">
+        <div>
+          <p class="eyebrow">Defense Notes</p>
+          <h2>答辩时重点讲什么</h2>
+        </div>
+        <div class="proof-grid">
+          <article><strong>为什么不是单轮 RAG</strong><span>项目需要意图路由、多轮澄清、工单副作用和人工兜底。</span></article>
+          <article><strong>为什么选择 LangGraph</strong><span>状态机让流程、失败点和可观测边界更清楚。</span></article>
+          <article><strong>如何降低幻觉</strong><span>证据引用、无证据兜底、知识缺口记录和评测回归。</span></article>
+          <article><strong>如何走向生产</strong><span>权限、审计、监控、成本、回滚和人工接管机制。</span></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>AI Agent Studio · L12 Showcase</span>
+      <span>L12 毕业项目实战：智能客服 Agent</span>
+    </footer>
+  </body>
+</html>

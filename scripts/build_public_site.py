@@ -27,6 +27,8 @@ ASSETS_DIR = DOCS_DIR / "assets"
 STUDIO_SOURCE = ROOT / "apps" / "agent_course_studio" / "web"
 STUDIO_EXPORT = DOCS_DIR / "studio"
 SHOWCASE_EXPORT = DOCS_DIR / "showcase"
+ROOT_STUDIO_FALLBACK = ROOT / "studio"
+ROOT_SHOWCASE_FALLBACK = ROOT / "showcase"
 COURSE_DATA = STUDIO_SOURCE / "data" / "course.json"
 PUBLIC_BASE_URL = "https://arvin-lucifer.github.io/agent_course_2026/"
 
@@ -396,6 +398,8 @@ Sitemap: {PUBLIC_BASE_URL}sitemap.xml
 """
     (DOCS_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
     (DOCS_DIR / "robots.txt").write_text(robots, encoding="utf-8")
+    (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    (ROOT / "robots.txt").write_text(robots, encoding="utf-8")
 
 
 def write_site_css() -> None:
@@ -990,6 +994,58 @@ footer {
 }
 """
     (DOCS_DIR / "site.css").write_text(css, encoding="utf-8")
+    (ROOT / "site.css").write_text(css, encoding="utf-8")
+
+
+def write_branch_root_fallbacks() -> None:
+    """Support GitHub Pages deployments that publish the repository root.
+
+    The preferred deployment path is the GitHub Actions Pages workflow, which
+    publishes ``docs/`` as the site root. Some repositories are configured as
+    "Deploy from a branch" with the repository root as the source; in that mode
+    GitHub Pages renders README.md through Jekyll and ``/studio/`` would be 404
+    unless root-level fallback files exist.
+    """
+
+    root_index = (DOCS_DIR / "index.html").read_text(encoding="utf-8")
+    root_index = root_index.replace('href="assets/', 'href="docs/assets/')
+    root_index = root_index.replace('src="assets/', 'src="docs/assets/')
+    root_index = root_index.replace(f'{PUBLIC_BASE_URL}assets/', f'{PUBLIC_BASE_URL}docs/assets/')
+    root_index = root_index.replace('alt="AI Agent Studio roadmap"', 'alt="AI Agent Studio roadmap"')
+    (ROOT / "index.html").write_text(root_index, encoding="utf-8")
+
+    if ROOT_STUDIO_FALLBACK.exists():
+        shutil.rmtree(ROOT_STUDIO_FALLBACK)
+    ROOT_STUDIO_FALLBACK.mkdir(parents=True, exist_ok=True)
+    studio_redirect = """<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Agent Studio</title>
+    <meta http-equiv="refresh" content="0; url=../apps/agent_course_studio/web/" />
+    <script>
+      const target = "../apps/agent_course_studio/web/" + window.location.hash;
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    <p>正在打开 AI Agent Studio...</p>
+    <p><a href="../apps/agent_course_studio/web/">如果没有自动跳转，请点击这里。</a></p>
+  </body>
+</html>
+"""
+    (ROOT_STUDIO_FALLBACK / "index.html").write_text(studio_redirect, encoding="utf-8")
+
+    if ROOT_SHOWCASE_FALLBACK.exists():
+        shutil.rmtree(ROOT_SHOWCASE_FALLBACK)
+    shutil.copytree(SHOWCASE_EXPORT, ROOT_SHOWCASE_FALLBACK)
+    showcase_index = ROOT_SHOWCASE_FALLBACK / "index.html"
+    showcase_html = showcase_index.read_text(encoding="utf-8")
+    showcase_html = showcase_html.replace('href="../assets/', 'href="../docs/assets/')
+    showcase_html = showcase_html.replace('src="../assets/', 'src="../docs/assets/')
+    showcase_html = showcase_html.replace(f'{PUBLIC_BASE_URL}assets/', f'{PUBLIC_BASE_URL}docs/assets/')
+    showcase_index.write_text(showcase_html, encoding="utf-8")
 
 
 def write_favicon() -> None:
@@ -1020,8 +1076,10 @@ def main() -> None:
     write_crawler_files()
     write_site_css()
     export_studio()
+    write_branch_root_fallbacks()
     print("[OK] Built public site in docs/")
     print("[OK] Built static Studio in docs/studio/")
+    print("[OK] Built branch-root fallbacks in /, /studio/ and /showcase/")
 
 
 if __name__ == "__main__":

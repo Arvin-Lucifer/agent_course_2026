@@ -27,6 +27,10 @@ README = ROOT / "README.md"
 DOCS_INDEX = ROOT / "docs" / "index.html"
 STUDIO_INDEX = ROOT / "docs" / "studio" / "index.html"
 SHOWCASE_INDEX = ROOT / "docs" / "showcase" / "index.html"
+ROOT_INDEX = ROOT / "index.html"
+ROOT_STUDIO_INDEX = ROOT / "studio" / "index.html"
+ROOT_SHOWCASE_INDEX = ROOT / "showcase" / "index.html"
+ROOT_SITE_CSS = ROOT / "site.css"
 ROBOTS_TXT = ROOT / "docs" / "robots.txt"
 SITEMAP_XML = ROOT / "docs" / "sitemap.xml"
 
@@ -55,8 +59,14 @@ SCAN_DIRS = [
     "README.md",
     "AI_AGENT_STUDIO_PLAN.md",
     "LAUNCH_KIT.md",
+    "index.html",
+    "site.css",
+    "robots.txt",
+    "sitemap.xml",
     "apps",
     "docs",
+    "studio",
+    "showcase",
     "lessons",
     "teaching_support",
     "requirements",
@@ -114,7 +124,17 @@ def check_lesson_readmes() -> None:
 
 
 def check_public_site() -> None:
-    for path in [DOCS_INDEX, STUDIO_INDEX, SHOWCASE_INDEX, ROBOTS_TXT, SITEMAP_XML]:
+    for path in [
+        DOCS_INDEX,
+        STUDIO_INDEX,
+        SHOWCASE_INDEX,
+        ROOT_INDEX,
+        ROOT_STUDIO_INDEX,
+        ROOT_SHOWCASE_INDEX,
+        ROOT_SITE_CSS,
+        ROBOTS_TXT,
+        SITEMAP_XML,
+    ]:
         if not path.exists():
             fail(f"{path.relative_to(ROOT)} is missing")
     readme = README.read_text(encoding="utf-8")
@@ -137,6 +157,13 @@ def check_public_site() -> None:
             fail(f"docs/index.html does not reference {local_ref}")
     if "showcase/" not in docs_index:
         fail("docs/index.html does not link to the graduation project showcase")
+    root_index = ROOT_INDEX.read_text(encoding="utf-8")
+    for expected in ["studio/", "showcase/", "docs/assets/course-roadmap.png"]:
+        if expected not in root_index:
+            fail(f"index.html does not contain branch-root fallback reference: {expected}")
+    root_studio_index = ROOT_STUDIO_INDEX.read_text(encoding="utf-8")
+    if "../apps/agent_course_studio/web/" not in root_studio_index:
+        fail("studio/index.html should redirect to the tracked Studio app")
     if "showcase/" not in SITEMAP_XML.read_text(encoding="utf-8"):
         fail("docs/sitemap.xml does not include the graduation project showcase")
     print("[OK] public site files")
@@ -144,6 +171,7 @@ def check_public_site() -> None:
 
 def check_html_local_references() -> None:
     html_files = sorted((ROOT / "docs").rglob("*.html"))
+    html_files += [ROOT_INDEX, ROOT_STUDIO_INDEX, ROOT_SHOWCASE_INDEX]
     for html_file in html_files:
         parser = LocalReferenceParser()
         parser.feed(html_file.read_text(encoding="utf-8", errors="ignore"))
