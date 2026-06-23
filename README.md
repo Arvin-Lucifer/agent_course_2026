@@ -51,7 +51,11 @@ python3 -m http.server 8780 --directory docs
 
 ```text
 http://127.0.0.1:8780
+http://127.0.0.1:8780/studio/
+http://127.0.0.1:8780/showcase/
 ```
+
+`127.0.0.1:8780` 只有在上面的 `python3 -m http.server ...` 命令持续运行时才可访问；如果浏览器提示拒绝访问，通常是本地 server 没启动、终端已关闭，或远程开发环境没有转发 `8780` 端口。
 
 ## Experience Preview
 

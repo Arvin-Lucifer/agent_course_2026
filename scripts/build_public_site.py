@@ -86,7 +86,7 @@ def write_public_home(data: dict) -> None:
     />
     <link rel="canonical" href="{PUBLIC_BASE_URL}" />
     <meta property="og:title" content="AgentCraft Studio" />
-    <meta property="og:description" content="把 AI Agent 知识练成可运行、可答辩、可展示的工程作品。" />
+    <meta property="og:description" content="12 章系统路径、交互式 Studio 和智能客服 Agent Showcase，面向 AI Agent 开发学习、实战和项目展示。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{PUBLIC_BASE_URL}" />
     <meta property="og:image" content="{PUBLIC_BASE_URL}assets/agentcraft-social-card.png" />
@@ -130,13 +130,13 @@ def write_public_home(data: dict) -> None:
       <section class="hero">
         <img src="assets/course-roadmap.png" alt="Agent Course roadmap" />
         <div class="hero-copy">
-          <p class="eyebrow">AI Agent Development Forge</p>
-          <h1>把 Agent 知识练成可交付作品</h1>
+          <p class="eyebrow">AgentCraft Studio 2026</p>
+          <h1>AI Agent 工程实战工作台</h1>
           <p>
-            12 章路径覆盖 Prompt、工具调用、LangChain、RAG、记忆系统、MCP、Skill、评测部署与智能客服毕业项目。
+            从系统学习到项目展示：12 章路径、交互式 Studio、面试题库和智能客服 Agent Showcase，帮助你构建可运行、可评测、可讲清楚的 Agent 工程能力。
           </p>
           <div class="hero-actions">
-            <a class="primary" href="studio/">进入 AgentCraft Studio</a>
+            <a class="primary" href="studio/">在线体验 Studio</a>
             <a class="secondary" href="https://github.com/Arvin-Lucifer/agent_course_2026">查看 GitHub 仓库</a>
           </div>
         </div>

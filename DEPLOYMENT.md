@@ -24,6 +24,10 @@ http://127.0.0.1:8780/studio/
 http://127.0.0.1:8780/showcase/
 ```
 
+Keep the `http.server` command running while previewing. If the browser says
+`connection refused`, no process is serving port `8780`, or the port has not
+been forwarded from the remote development environment.
+
 ## GitHub Pages
 
 After pushing to GitHub, enable Pages from repository settings:
@@ -53,6 +57,9 @@ https://arvin-lucifer.github.io/agent_course_2026/showcase/
 ```
 
 If a custom domain is configured later, add it in GitHub Pages settings and update the repository About URL.
+
+Use the GitHub Pages URLs for normal browsing and sharing. Use `127.0.0.1:8780`
+only for local preview after starting the static server.
 
 ## Validation
 

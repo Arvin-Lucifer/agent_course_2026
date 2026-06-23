@@ -8,9 +8,9 @@
   <text x="166" y="108" fill="#FFFDF8" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="900">AgentCraft Studio 2026</text>
   <text x="166" y="139" fill="#A7B0B8" font-family="Inter,Arial,sans-serif" font-size="17">AI Agent Development Forge</text>
 
-  <text x="74" y="244" fill="#FFFDF8" font-family="Inter,Arial,sans-serif" font-size="64" font-weight="900">把 Agent 知识练成</text>
-  <text x="74" y="322" fill="#FFFDF8" font-family="Inter,Arial,sans-serif" font-size="64" font-weight="900">可交付工程作品</text>
-  <text x="78" y="374" fill="#DDE6EA" font-family="Inter,Arial,sans-serif" font-size="22">12 章路线 · 交互式 Studio · 面试题库 · 智能客服 Agent Showcase</text>
+  <text x="74" y="244" fill="#FFFDF8" font-family="Inter,Arial,sans-serif" font-size="64" font-weight="900">AI Agent 工程</text>
+  <text x="74" y="322" fill="#FFFDF8" font-family="Inter,Arial,sans-serif" font-size="64" font-weight="900">实战工作台</text>
+  <text x="78" y="374" fill="#DDE6EA" font-family="Inter,Arial,sans-serif" font-size="22">系统学习 · 代码实战 · 面试准备 · 智能客服 Agent Showcase</text>
 
   <g font-family="Inter,Arial,sans-serif" font-size="16" font-weight="800">
     <rect x="78" y="430" width="104" height="38" rx="19" fill="#D9F1ED"/>
