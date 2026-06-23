@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "eb6b8cbf5203478d",
+  "contentVersion": "606fd48c7fc21a52",
   "course": {
-    "name": "AgentCraft Studio",
+    "name": "AI Agent Studio",
     "subtitle": "AI Agent 开发实战工作台",
-    "description": "从 Agent 基础、Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill，到评测部署和智能客服毕业项目，把知识练成可交付作品。"
+    "description": "从 Agent 基础、Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill，到评测部署和智能客服毕业项目，构建可运行、可评测、可展示的 AI Agent 工程能力。"
   },
   "stats": {
     "lessonCount": 12,

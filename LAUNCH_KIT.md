@@ -1,13 +1,13 @@
 # Launch Kit
 
-这份文档用于把 AgentCraft Studio 2026 从“已经整理好的仓库”推到“别人愿意点开、看懂、收藏、运行”的状态。
+这份文档用于把 AI Agent Studio 从“已经整理好的仓库”推到“别人愿意点开、看懂、收藏、运行”的状态。
 
 ## 1. GitHub About 建议
 
 在 GitHub 仓库右侧 `About` 区域填写：
 
 ```text
-AI Agent development forge with 12 lessons, an interactive Studio, and an intelligent customer Agent showcase.
+AI Agent engineering workspace with 12 lessons, an interactive Studio, and an intelligent customer Agent showcase.
 ```
 
 Website:
@@ -44,7 +44,7 @@ python
 ## 3. 一句话介绍
 
 ```text
-AgentCraft Studio 2026 是一个 AI Agent 开发实战工作台：12 章系统路径、交互式 Studio、面试题库、代码实践和一个端到端智能客服 Agent 毕业项目。
+AI Agent Studio 是一个 AI Agent 开发实战工作台：12 章系统路径、交互式 Studio、面试题库、代码实践和一个端到端智能客服 Agent 毕业项目。
 ```
 
 更短版本：
@@ -58,7 +58,7 @@ AI Agent 工程实战工作台：从系统学习到项目展示。
 0-10 秒：
 
 ```text
-这是 AgentCraft Studio 2026，一个面向 AI Agent 开发的实战工作台，不只是资料合集，而是从学习、练习、面试到毕业项目的一条完整路径。
+这是 AI Agent Studio，一个面向 AI Agent 开发的实战工作台，不只是资料合集，而是从学习、练习、面试到毕业项目的一条完整路径。
 ```
 
 10-25 秒：
@@ -90,7 +90,7 @@ AI Agent 工程实战工作台：从系统学习到项目展示。
 中文短文案：
 
 ```text
-整理了一个 AI Agent 开发实战工作台：AgentCraft Studio 2026。
+整理了一个 AI Agent 开发实战工作台：AI Agent Studio。
 它覆盖 Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill、评测部署，并带一个智能客服 Agent 毕业项目。
 在线预览：https://arvin-lucifer.github.io/agent_course_2026/
 ```
@@ -98,7 +98,7 @@ AI Agent 工程实战工作台：从系统学习到项目展示。
 英文短文案：
 
 ```text
-I built AgentCraft Studio 2026: a practical AI Agent development forge with 12 lessons, an interactive Studio, interview prep, runnable practice code, and an intelligent customer Agent showcase.
+I built AI Agent Studio: a practical AI Agent development forge with 12 lessons, an interactive Studio, interview prep, runnable practice code, and an intelligent customer Agent showcase.
 Live preview: https://arvin-lucifer.github.io/agent_course_2026/
 ```
 
@@ -109,7 +109,7 @@ Live preview: https://arvin-lucifer.github.io/agent_course_2026/
 镜头顺序：
 
 1. 打开公开首页，停在路线图和三张体验卡。
-2. 点击 `进入 AgentCraft Studio`，展示章节导航、挑战、面试和搜索。
+2. 点击 `进入 AI Agent Studio`，展示章节导航、挑战、面试和搜索。
 3. 点击 L12，展示智能客服 Agent 项目卡片。
 4. 打开 `/showcase/`，讲架构、运行命令和答辩要点。
 5. 回到 README，展示本地运行和校验命令。
@@ -134,7 +134,7 @@ http://127.0.0.1:8780/showcase/
 README 和公开首页使用同一张社交预览卡：
 
 ```text
-docs/assets/agentcraft-social-card.png
+docs/assets/ai-agent-studio-social-card.png
 ```
 
 它适合用作 GitHub README 首图、社交平台配图和链接预览图。
@@ -143,7 +143,7 @@ docs/assets/agentcraft-social-card.png
 
 - 在 GitHub About 中填写 Description、Website 和 Topics。
 - 确认 README 顶部三个在线入口都能打开。
-- 确认 `docs/assets/agentcraft-social-card.png`、`site-preview.png`、`showcase-preview.png`、`studio-preview.png` 在 GitHub README 中正常显示。
+- 确认 `docs/assets/ai-agent-studio-social-card.png`、`site-preview.png`、`showcase-preview.png`、`studio-preview.png` 在 GitHub README 中正常显示。
 - 在社交平台或简历中优先放首页链接，其次放 `/showcase/`。
 - 每次内容更新后运行质量门禁：
 

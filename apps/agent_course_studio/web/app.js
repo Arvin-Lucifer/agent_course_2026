@@ -794,7 +794,7 @@ function exportLearningReport() {
   const completed = lessons.filter((lesson) => state.done.has(lesson.id));
   const next = lessons.find((lesson) => !state.done.has(lesson.id));
   const lines = [
-    "# AgentCraft Studio 学习报告",
+    "# AI Agent Studio 学习报告",
     "",
     `生成时间：${new Date().toLocaleString()}`,
     `完成进度：${completed.length}/${lessons.length}`,
@@ -816,7 +816,7 @@ function exportLearningReport() {
   const blob = new Blob([lines.join("\n")], { type: "text/markdown;charset=utf-8" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
-  link.download = `agentcraft-learning-report-${new Date().toISOString().slice(0, 10)}.md`;
+  link.download = `ai-agent-studio-learning-report-${new Date().toISOString().slice(0, 10)}.md`;
   document.body.appendChild(link);
   link.click();
   URL.revokeObjectURL(link.href);

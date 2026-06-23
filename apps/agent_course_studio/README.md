@@ -1,6 +1,6 @@
-# AgentCraft Studio
+# AI Agent Studio
 
-`AgentCraft Studio` 是本仓库的网页版 Agent 开发实战工作台。它直接读取 `lessons/L01-L12` 的课程材料，生成一个可浏览、可搜索、可演示、可复盘的学习入口。
+`AI Agent Studio` 是本仓库的网页版 Agent 开发实战工作台。它直接读取 `lessons/L01-L12` 的课程材料，生成一个可浏览、可搜索、可演示、可复盘的学习入口。
 
 ## 功能
 

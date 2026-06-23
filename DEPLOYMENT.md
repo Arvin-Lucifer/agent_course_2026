@@ -1,6 +1,6 @@
 # Deployment
 
-This project is designed to publish a static public website and a static AgentCraft Studio through GitHub Pages.
+This project is designed to publish a static public website and a static AI Agent Studio through GitHub Pages.
 
 ## Local Preview
 

@@ -1,12 +1,12 @@
 # Roadmap
 
-AgentCraft Studio 2026 的目标是从课程资料仓库，逐步演进为可公开访问、可自学、可演示、可评测的 Agent 开发实战工作台。
+AI Agent Studio 的目标是从课程资料仓库，逐步演进为可公开访问、可自学、可演示、可评测的 Agent 开发实战工作台。
 
 ## Phase 1: Public Launch
 
 - GitHub README 具备清晰课程定位、路线图和能力矩阵。
 - `docs/` 提供可部署的公开官网。
-- `docs/studio/` 提供静态版 AgentCraft Studio。
+- `docs/studio/` 提供静态版 AI Agent Studio。
 - `docs/showcase/` 提供 L12 智能客服 Agent 项目展示页。
 - README、Launch Kit 和公开截图支持对外传播。
 - CI 检查课程索引、公开站点、敏感信息和静态资源。
@@ -37,4 +37,4 @@ AgentCraft Studio 2026 的目标是从课程资料仓库，逐步演进为可公
 
 - 不把浏览器端变成任意 shell 入口。
 - 不在仓库内保存真实 API key、代理配置或个人路径。
-- 不为了炫技引入重型前端框架，除非产品需求已经超过当前静态架构。
+- 不为了炫技引入重型前端框架，除非功能需求已经超过当前静态架构。

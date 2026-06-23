@@ -53,7 +53,7 @@ FORBIDDEN_PATTERNS = [
 SCAN_EXTENSIONS = {".md", ".py", ".js", ".json", ".html", ".css", ".svg", ".yml", ".yaml", ".txt"}
 SCAN_DIRS = [
     "README.md",
-    "AGENTCRAFT_STUDIO_PLAN.md",
+    "AI_AGENT_STUDIO_PLAN.md",
     "LAUNCH_KIT.md",
     "apps",
     "docs",
@@ -121,7 +121,7 @@ def check_public_site() -> None:
     docs_index = DOCS_INDEX.read_text(encoding="utf-8")
     for image in [
         "docs/assets/course-roadmap.png",
-        "docs/assets/agentcraft-social-card.png",
+        "docs/assets/ai-agent-studio-social-card.png",
         "docs/assets/studio-architecture.png",
         "docs/assets/capability-matrix.png",
         "docs/assets/site-preview.png",

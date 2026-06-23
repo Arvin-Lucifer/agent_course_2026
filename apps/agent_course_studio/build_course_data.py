@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the static data file used by AgentCraft Studio.
+"""Build the static data file used by AI Agent Studio.
 
 The builder treats the existing lesson folders as the source of truth. It reads
 Markdown and practice files, extracts a compact manifest, and writes one JSON
@@ -315,9 +315,9 @@ def build() -> dict:
         "fileCount": sum(lesson["fileCount"] for lesson in lessons),
     }
     course = {
-        "name": "AgentCraft Studio",
+        "name": "AI Agent Studio",
         "subtitle": "AI Agent 开发实战工作台",
-        "description": "从 Agent 基础、Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill，到评测部署和智能客服毕业项目，把知识练成可交付作品。",
+        "description": "从 Agent 基础、Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill，到评测部署和智能客服毕业项目，构建可运行、可评测、可展示的 AI Agent 工程能力。",
     }
     return {
         "schemaVersion": 1,

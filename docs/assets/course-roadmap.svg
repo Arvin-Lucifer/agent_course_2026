@@ -1,9 +1,9 @@
 <svg width="1180" height="520" viewBox="0 0 1180 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Agent Course Roadmap</title>
+  <title id="title">AI Agent Studio Roadmap</title>
   <desc id="desc">A 12 lesson roadmap from Agent basics to graduation project.</desc>
   <rect width="1180" height="520" rx="24" fill="#F7F5EF"/>
   <path d="M0 78H1180" stroke="#E1DED4"/>
-  <text x="42" y="50" fill="#17202A" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800">Agent Course Roadmap</text>
+  <text x="42" y="50" fill="#17202A" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="800">AI Agent Studio Roadmap</text>
   <text x="930" y="48" fill="#667085" font-family="Inter,Arial,sans-serif" font-size="15">12 lessons · 4 learning stages</text>
   <g stroke="#D9D6CC">
     <path d="M80 174H1100"/>

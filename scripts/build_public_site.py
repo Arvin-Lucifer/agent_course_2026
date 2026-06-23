@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build the public GitHub Pages site for AgentCraft Studio.
+"""Build the public GitHub Pages site for AI Agent Studio.
 
 The course content still lives in ``lessons/`` and the Studio app still lives in
 ``apps/agent_course_studio``. This script creates a deployable ``docs/`` folder:
 
 - ``docs/index.html``: public landing page.
-- ``docs/studio/``: static export of AgentCraft Studio.
+- ``docs/studio/``: static export of AI Agent Studio.
 - ``docs/showcase/``: L12 graduation project showcase page.
 
 GitHub Pages can publish this folder directly, while local development can keep
@@ -79,17 +79,17 @@ def write_public_home(data: dict) -> None:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AgentCraft Studio | AI Agent 开发实战工作台</title>
+    <title>AI Agent Studio | AI Agent 开发实战工作台</title>
     <meta
       name="description"
       content="从 Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill 到评测部署和智能客服毕业项目的 AI Agent 开发实战工作台。"
     />
     <link rel="canonical" href="{PUBLIC_BASE_URL}" />
-    <meta property="og:title" content="AgentCraft Studio" />
+    <meta property="og:title" content="AI Agent Studio" />
     <meta property="og:description" content="12 章系统路径、交互式 Studio 和智能客服 Agent Showcase，面向 AI Agent 开发学习、实战和项目展示。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{PUBLIC_BASE_URL}" />
-    <meta property="og:image" content="{PUBLIC_BASE_URL}assets/agentcraft-social-card.png" />
+    <meta property="og:image" content="{PUBLIC_BASE_URL}assets/ai-agent-studio-social-card.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="site.css" />
@@ -97,11 +97,11 @@ def write_public_home(data: dict) -> None:
       {{
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "AgentCraft Studio",
+        "name": "AI Agent Studio",
         "description": "面向 AI Agent 开发学习、工程实践、面试准备和毕业项目展示的实战工作台。",
         "provider": {{
           "@type": "Organization",
-          "name": "AgentCraft Studio"
+          "name": "AI Agent Studio"
         }},
         "hasCourseInstance": {{
           "@type": "CourseInstance",
@@ -113,9 +113,9 @@ def write_public_home(data: dict) -> None:
   </head>
   <body>
     <header class="site-nav">
-      <a class="brand" href="./" aria-label="AgentCraft Studio home">
-        <span>AC</span>
-        <strong>AgentCraft Studio</strong>
+      <a class="brand" href="./" aria-label="AI Agent Studio home">
+        <span>AI</span>
+        <strong>AI Agent Studio</strong>
       </a>
       <nav aria-label="Primary">
         <a href="#curriculum">课程路线</a>
@@ -128,9 +128,9 @@ def write_public_home(data: dict) -> None:
 
     <main>
       <section class="hero">
-        <img src="assets/course-roadmap.png" alt="Agent Course roadmap" />
+        <img src="assets/course-roadmap.png" alt="AI Agent Studio roadmap" />
         <div class="hero-copy">
-          <p class="eyebrow">AgentCraft Studio 2026</p>
+          <p class="eyebrow">AI Agent Studio</p>
           <h1>AI Agent 工程实战工作台</h1>
           <p>
             从系统学习到项目展示：12 章路径、交互式 Studio、面试题库和智能客服 Agent Showcase，帮助你构建可运行、可评测、可讲清楚的 Agent 工程能力。
@@ -169,7 +169,7 @@ def write_public_home(data: dict) -> None:
 
       <section id="studio" class="split-section">
         <div>
-          <p class="eyebrow">AgentCraft Studio</p>
+          <p class="eyebrow">AI Agent Studio</p>
           <h2>公开访问优先，本地运行进阶</h2>
           <p>
             静态工作台可以直接托管在 GitHub Pages；如果需要运行课程脚本，再切回本地 server，并由白名单 runner 控制风险。
@@ -181,7 +181,7 @@ def write_public_home(data: dict) -> None:
             <li>真实脚本运行默认关闭，不暴露密钥和本机路径。</li>
           </ul>
         </div>
-        <img src="assets/studio-architecture.png" alt="AgentCraft Studio architecture" />
+        <img src="assets/studio-architecture.png" alt="AI Agent Studio architecture" />
       </section>
 
       <section id="curriculum" class="curriculum">
@@ -240,7 +240,7 @@ def write_public_home(data: dict) -> None:
     </main>
 
     <footer>
-      <span>AgentCraft Studio</span>
+      <span>AI Agent Studio</span>
       <span>Static-first · Runner-safe · Built for Agent builders</span>
     </footer>
   </body>
@@ -259,10 +259,10 @@ def write_project_showcase(data: dict) -> None:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>智能客服 Agent 展示 | AgentCraft Studio</title>
+    <title>智能客服 Agent 展示 | AI Agent Studio</title>
     <meta
       name="description"
-      content="AgentCraft Studio 毕业项目展示：基于 LangGraph、RAG、FastAPI、评测脚本和前端客服台的智能客服 Agent。"
+      content="AI Agent Studio 毕业项目展示：基于 LangGraph、RAG、FastAPI、评测脚本和前端客服台的智能客服 Agent。"
     />
     <link rel="canonical" href="{PUBLIC_BASE_URL}showcase/" />
     <meta property="og:title" content="智能客服 Agent 展示" />
@@ -276,9 +276,9 @@ def write_project_showcase(data: dict) -> None:
   </head>
   <body>
     <header class="site-nav">
-      <a class="brand" href="../" aria-label="AgentCraft Studio home">
-        <span>AC</span>
-        <strong>AgentCraft Studio</strong>
+      <a class="brand" href="../" aria-label="AI Agent Studio home">
+        <span>AI</span>
+        <strong>AI Agent Studio</strong>
       </a>
       <nav aria-label="Primary">
         <a href="../">首页</a>
@@ -302,7 +302,7 @@ def write_project_showcase(data: dict) -> None:
           </div>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/studio-preview.png" alt="AgentCraft Studio L12 project screen" />
+          <img src="../assets/studio-preview.png" alt="AI Agent Studio L12 project screen" />
           <div class="showcase-terminal" aria-label="Project quick commands">
             <span>$ cd lessons/L12_graduation_project</span>
             <span>$ bash practice/preclass_run.sh</span>
@@ -366,7 +366,7 @@ def write_project_showcase(data: dict) -> None:
     </main>
 
     <footer>
-      <span>AgentCraft Studio · L12 Showcase</span>
+      <span>AI Agent Studio · L12 Showcase</span>
       <span>{escape_html(l12["title"])}</span>
     </footer>
   </body>
@@ -996,7 +996,7 @@ def write_favicon() -> None:
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     favicon = """<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" rx="14" fill="#17202A"/>
-  <text x="14" y="40" fill="#FFFDF8" font-family="Arial,sans-serif" font-size="24" font-weight="800">AC</text>
+  <text x="18" y="40" fill="#FFFDF8" font-family="Arial,sans-serif" font-size="24" font-weight="800">AI</text>
 </svg>
 """
     (ASSETS_DIR / "favicon.svg").write_text(favicon, encoding="utf-8")
