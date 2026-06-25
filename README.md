@@ -2,9 +2,9 @@
 
 面向 **AI Agent 开发学习、工程实践、面试准备和毕业项目展示** 的实战工作台。仓库覆盖从 Agent 基础认知、Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill，到评测部署和智能客服毕业项目的完整路径，并配套可运行的网页版 AI Agent Studio。
 
-[公开首页](https://arvin-lucifer.github.io/agent_course_2026/) ·
-[进入 Studio](https://arvin-lucifer.github.io/agent_course_2026/studio/) ·
-[查看 L12 Showcase](https://arvin-lucifer.github.io/agent_course_2026/showcase/)
+[公开首页](https://arvin-lucifer.github.io/AI_Agent_Studio/) ·
+[进入 Studio](https://arvin-lucifer.github.io/AI_Agent_Studio/studio/) ·
+[查看 L12 Showcase](https://arvin-lucifer.github.io/AI_Agent_Studio/showcase/)
 
 ![Python](https://img.shields.io/badge/Python-3.11+-2556A3)
 ![AI Agent Studio](https://img.shields.io/badge/AI%20Agent-Studio-0F766E)
@@ -214,7 +214,7 @@ lessons/L12_graduation_project/
 公开展示页：
 
 ```text
-https://arvin-lucifer.github.io/agent_course_2026/showcase/
+https://arvin-lucifer.github.io/AI_Agent_Studio/showcase/
 ```
 
 ## Safety Notes

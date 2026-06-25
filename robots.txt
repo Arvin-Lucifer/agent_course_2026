@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arvin-lucifer.github.io/agent_course_2026/sitemap.xml
+Sitemap: https://arvin-lucifer.github.io/AI_Agent_Studio/sitemap.xml

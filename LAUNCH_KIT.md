@@ -13,7 +13,7 @@ AI Agent engineering workspace with 12 lessons, an interactive Studio, and an in
 Website:
 
 ```text
-https://arvin-lucifer.github.io/agent_course_2026/
+https://arvin-lucifer.github.io/AI_Agent_Studio/
 ```
 
 Topics 建议：
@@ -37,9 +37,9 @@ python
 
 | 入口 | 用途 |
 | --- | --- |
-| `https://arvin-lucifer.github.io/agent_course_2026/` | 对外首页，适合放在 GitHub About、简历和社交平台 |
-| `https://arvin-lucifer.github.io/agent_course_2026/studio/` | 静态 Studio，适合让别人快速浏览课程内容 |
-| `https://arvin-lucifer.github.io/agent_course_2026/showcase/` | L12 项目展示页，适合面试、答辩和作品集 |
+| `https://arvin-lucifer.github.io/AI_Agent_Studio/` | 对外首页，适合放在 GitHub About、简历和社交平台 |
+| `https://arvin-lucifer.github.io/AI_Agent_Studio/studio/` | 静态 Studio，适合让别人快速浏览课程内容 |
+| `https://arvin-lucifer.github.io/AI_Agent_Studio/showcase/` | L12 项目展示页，适合面试、答辩和作品集 |
 
 ## 3. 一句话介绍
 
@@ -92,14 +92,14 @@ AI Agent 工程实战工作台：从系统学习到项目展示。
 ```text
 整理了一个 AI Agent 开发实战工作台：AI Agent Studio。
 它覆盖 Prompt、Function Calling、LangChain、RAG、Memory、MCP、Skill、评测部署，并带一个智能客服 Agent 毕业项目。
-在线预览：https://arvin-lucifer.github.io/agent_course_2026/
+在线预览：https://arvin-lucifer.github.io/AI_Agent_Studio/
 ```
 
 英文短文案：
 
 ```text
 I built AI Agent Studio: a practical AI Agent development forge with 12 lessons, an interactive Studio, interview prep, runnable practice code, and an intelligent customer Agent showcase.
-Live preview: https://arvin-lucifer.github.io/agent_course_2026/
+Live preview: https://arvin-lucifer.github.io/AI_Agent_Studio/
 ```
 
 ## 6. Demo 视频建议

@@ -30,7 +30,7 @@ SHOWCASE_EXPORT = DOCS_DIR / "showcase"
 ROOT_STUDIO_FALLBACK = ROOT / "studio"
 ROOT_SHOWCASE_FALLBACK = ROOT / "showcase"
 COURSE_DATA = STUDIO_SOURCE / "data" / "course.json"
-PUBLIC_BASE_URL = "https://arvin-lucifer.github.io/agent_course_2026/"
+PUBLIC_BASE_URL = "https://arvin-lucifer.github.io/AI_Agent_Studio/"
 
 
 def run_build_course_data() -> None:
@@ -139,7 +139,7 @@ def write_public_home(data: dict) -> None:
           </p>
           <div class="hero-actions">
             <a class="primary" href="studio/">在线体验 Studio</a>
-            <a class="secondary" href="https://github.com/Arvin-Lucifer/agent_course_2026">查看 GitHub 仓库</a>
+            <a class="secondary" href="https://github.com/Arvin-Lucifer/AI_Agent_Studio">查看 GitHub 仓库</a>
           </div>
         </div>
       </section>
@@ -285,7 +285,7 @@ def write_project_showcase(data: dict) -> None:
       <nav aria-label="Primary">
         <a href="../">首页</a>
         <a href="../studio/">进入工作台</a>
-        <a href="https://github.com/Arvin-Lucifer/agent_course_2026/tree/main/lessons/L12_graduation_project">GitHub 项目目录</a>
+        <a href="https://github.com/Arvin-Lucifer/AI_Agent_Studio/tree/main/lessons/L12_graduation_project">GitHub 项目目录</a>
       </nav>
     </header>
 
@@ -300,7 +300,7 @@ def write_project_showcase(data: dict) -> None:
           </p>
           <div class="hero-actions">
             <a class="primary" href="../studio/#L12_graduation_project/overview">在 Studio 中学习 L12</a>
-            <a class="secondary dark" href="https://github.com/Arvin-Lucifer/agent_course_2026/tree/main/lessons/L12_graduation_project/reference_implementation/intelligent_customer_agent">查看参考实现</a>
+            <a class="secondary dark" href="https://github.com/Arvin-Lucifer/AI_Agent_Studio/tree/main/lessons/L12_graduation_project/reference_implementation/intelligent_customer_agent">查看参考实现</a>
           </div>
         </div>
         <div class="showcase-visual">

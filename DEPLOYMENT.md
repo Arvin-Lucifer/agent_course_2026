@@ -51,9 +51,9 @@ The workflow will:
 The final URL is controlled by GitHub Pages. For this repository it is expected to look like:
 
 ```text
-https://arvin-lucifer.github.io/agent_course_2026/
-https://arvin-lucifer.github.io/agent_course_2026/studio/
-https://arvin-lucifer.github.io/agent_course_2026/showcase/
+https://arvin-lucifer.github.io/AI_Agent_Studio/
+https://arvin-lucifer.github.io/AI_Agent_Studio/studio/
+https://arvin-lucifer.github.io/AI_Agent_Studio/showcase/
 ```
 
 If a custom domain is configured later, add it in GitHub Pages settings and update the repository About URL.
